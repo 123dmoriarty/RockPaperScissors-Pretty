@@ -1,20 +1,4 @@
-h1 {
-  width: 500px;
-  margin: 0 auto;
-  background: gray;
-  text-align: center;
-  color: #c6ac8f;
-}
 
-h1 {
-  background-color: #5e503f; /* Changing background color */
-  font-weight: bold; /* Making font bold */
-  border-radius: 500px; /* Making border radius */
-  width: 300px; /* Making auto-sizable width */
-  height: auto; /* Making auto-sizable height */
-  padding: 5px 30px 5px 30px; /* Making space around letters */
-  font-size: 28px; /* Changing font size */
-}
 
 table {
   width: auto;
@@ -27,19 +11,13 @@ body {
   padding-top: 15px;
 }
 
-h2 {
-  width: 100px;
-  height: 75px;
-}
+
 
 .rulesText {
   padding-top: 25px;
 }
 
-h5 {
-  width: 100px;
-  height: 25px;
-}
+
 
 .headTest {
   width: 10px;
@@ -192,4 +170,43 @@ h5 {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+}
+
+.reset { min-height: 100%; margin: 0; display: flex; justify-content: center; align-items: center; }
+
+.reset {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: none;
+  color: #c6ac8f;
+  font-family: Avenir, Arial, sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  background: #5e503f;
+  text-shadow: 0 3px 1px #4f4334;
+  box-shadow: 0 8px 0 #4f4334,
+    0 15px 20px rgba(0,0,0,.35);
+  text-transform: uppercase;
+  transition: .4s all ease-in;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  align-items: center;
+
+}
+button span { position: relative; }
+
+/* fix for IE 11 (and IE8+, although the earlier versions are harder to address) stupidly moving the inner button text on click */
+.pressed {
+  padding-top: 3px;
+  transform: translateY(4px);
+  box-shadow: 0 4px 0 rgb(183,0,0),
+    0 8px 6px rgba(0,0,0,.45);
+}
+
+.col-3 {
+  padding-left: 135px
 }

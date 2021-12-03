@@ -23,7 +23,7 @@
               <p class="textColor rulesText">Click on any of the three options (Rock Paper Or Scissors) the computer will generate an answer and the winner will be decided</p>
             </div>
             <div class="col">
-                <h1>ROCK PAPER SCISSORS</h1>
+                <h1 class="bubble">ROCK PAPER SCISSORS</h1>
             </div>
             <div class="col">
               <table class="table">
@@ -36,9 +36,13 @@
               <tbody>
                 <tr>
                     <th scope="row">Player</th>
-                    <td>0</td>
+                    <td>
+                      <h5 id="playerwins"></h5>
+                    </td>
                     <th scope="row">Computer</th>
-                    <td>0</td>
+                    <td>
+                      <h5 id="computerwins"></h5>
+                    </td>
                   </tr>
                  </tbody>
               </table>
@@ -46,7 +50,7 @@
           </div>
         </div>
 
-        <h5>      </h5>
+
 
     <table class="center" style="width: 100%;">
       <tr>
@@ -88,21 +92,27 @@
 <div class="container">
   <div class="row justify-content-center text-center my-5">
     <div class="col-8 pt-3 pb-5 border border-dark">
+      <h3></h3>
     <div class="output">
-      </div>
 
+      </div>
+<h1 id="result"></h1>
     </div>
     </div>
   </div>
 
-<div class="row">
+  <div class="row justify-content-center">
+      <div class="col-3">
 
+  <button class="reset" id="everybodydance reset" onclick="resetScore()"><span>Reset Score!</span></button>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="index.js">
+
+      </script>
+      </div>
+
+  </div>
     <script type="text/javascript" src="index.js">
 
     </script>
